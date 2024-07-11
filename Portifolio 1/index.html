@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TubsAMY</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="navbar-logo">TubsAMY</a>
+            <ul class="navbar-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">My Services</a></li>
+                <li><a href="#contact">CV</a></li>
+            </ul>
+            <div class="navbar-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section id="intro">
+            <p>Hello there,</p>
+            <h2>My name is Tubagus Aldi Maulana Yusuf, a student of Informatics Engineering at Pamulang University, who is enthusiastic and highly motivated with a keen interest in Machine Learning and developing soft skills. I actively participate in internships to enhance my skills in data analysis, data visualization, and building Machine Learning classification models. Additionally, I have experience in bulletin layout design and photo studio editing.</h2>
+        </section>
+
+        <section id="project">
+            <h2>Project</h2>
+            <div class="grid-container">
+                <div class="card">
+                    <img src="img/Rock Paper Scissors.jpg" alt="Rock Paper Scissors">
+                    <h3>Machine Learning Project</h3>
+                    <p>Rock Paper Scissors</p>
+                </div>
+                <div class="card">
+                    <img src="img/Spice Detection.jpg" alt="Spice Detection">
+                    <h3>Machine Learning Project</h3>
+                    <p>Spice Detection</p>
+                </div>
+        </section>
+
+    </main>
+    <header>
+        <h1>TubsAMY</h1>
+        <div class="social-icons">
+            <a href="mailto:tubagusaldimy@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+            <a href="https://instagram.com/tubagus_aldi.m.y" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/TubagusAldiMY" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="www.linkedin.com/in/tubagusaldi" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </header>
+
+    <footer>
+        <p>&copy; 2024 TubsAMY. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const navbarToggle = document.querySelector('.navbar-toggle');
+        const navbarMenu = document.querySelector('.navbar-menu');
+
+        navbarToggle.addEventListener('click', () => {
+            navbarMenu.classList.toggle('active');
+            navbarToggle.classList.toggle('active');
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!navbarToggle.contains(e.target) && !navbarMenu.contains(e.target)) {
+                navbarMenu.classList.remove('active');
+                navbarToggle.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+
+</html>
